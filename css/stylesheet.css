@@ -54,7 +54,7 @@ body {
 }
 
 aside {
-  background-color: #eeeeeecf;
+  background-color: #f5fbf2;
   width: 30%;
   height: 100%;
   padding: 0rem 2.5rem 0rem 0.5rem;
@@ -68,7 +68,7 @@ nav {
 }
 
 nav a {
-  color: rgba(25, 148, 14, 0.585);
+  color: #a3af9e;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
