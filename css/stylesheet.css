@@ -56,11 +56,10 @@ body {
 
 aside {
   background-color: #f5fbf2;
-  width: 30%;
+  width: 25%;
   height: 100%;
   padding: 0rem 2.5rem 0rem 0.5rem;
   border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 
 nav {
@@ -105,42 +104,86 @@ article p {
 
 footer {
   display: flex;
-  padding: 1rem 2rem 2rem 2rem;
-  background-color: #f5fbf2;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #7b99717d;
+  height: fit-content;
 }
 
 footer h2 {
   width: 15%;
 }
 
-footer form {
-  display: flex;
+.form-cont {
+  display: grid;
+  grid-template-columns: 5rem 20rem;
+  grid-template-rows: 2rem 2rem 10rem 2rem;
+  column-gap: 1rem;
+  row-gap: 0.6rem;
 }
 
-footer select {
-  height: fit-content;
-  margin-left: 0.5rem;
-  padding: 0.2rem;
+.label-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  text-align: right;
+  margin-top: 0.5rem;
 }
 
-footer label {
-  margin-bottom: 2rem;
+.label-2 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  text-align: right;
+  margin-top: 0.5rem;
 }
 
-.name-msg {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
-  margin-right: 2rem;
+.label-3 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  text-align: right;
+  margin-top: 0.5rem;
 }
 
 .user-email {
-  margin-bottom: 0.5rem;
-  padding: 0.2rem;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  padding: 0.5rem;
+  border: 1px solid #a3af9e38;
+  border-bottom: 1px solid #19940e;
+  width: 14rem;
+  border-radius: 0.5rem;
 }
 
-.footer-sub {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
+.select {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  padding: 0.5rem;
+  border: 1px solid #a3af9e38;
+  border-bottom: 1px solid #19940e;
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+.msg {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  padding: 0.5rem;
+  border: 1px solid #a3af9e38;
+  border-bottom: 1px solid #19940e;
+  border-radius: 0.5rem;
+}
+
+.send-btn {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #19940e;
+  color: #fff;
+  font-weight: 600;
+  width: 9rem;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 0.95;
 }
